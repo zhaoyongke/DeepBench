@@ -375,7 +375,7 @@ public:
 
 
 #if CUDNN_MAJOR >= 7
-        CHECK_CUDNN_ERROR(cudnnSetRNNDescriptor(cudnn_handle,
+        CHECK_CUDNN_ERROR(cudnnSetRNNDescriptor_v6(cudnn_handle,
                                                 *desc,
 #else
         CHECK_CUDNN_ERROR(cudnnSetRNNDescriptor(*desc,
